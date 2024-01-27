@@ -265,7 +265,7 @@
 
 		.decrease-font-size-btn{
 			transform: scale(2);
-            margin-right: 65px;
+            margin-right: 88px;
             margin-top: 20px;
         }
         #pain_result {
@@ -759,7 +759,7 @@
 				QOLscore = 100 - ((totalQOLscore / totalQOLquestions) * 100) / 4;
 				document.getElementById("QOL_result").innerHTML = "Your Section 5 score is: " + Math.round(QOLscore) + "/100";
 
-				var popup = showPopup("Thank you very much for completing all the questions in this survey.<br><br>Please do not close this page, and write your score on the card, then hand it to the physiothearpist.<br><br> Your Section 1 score is: " + Math.round(PAINscore) + "/100<br>"
+				var popup = showPopup("Thank you very much for completing all the questions in this survey.<br><br>Please do not close this page, and write your score on the card, then hand it to the physiotherapist.<br><br> Your Section 1 score is: " + Math.round(PAINscore) + "/100<br>"
 				+ "Your Section 2 score is: " + Math.round(SYMPTOMSscore) + "/100<br>"
 				+ "Your Section 3 score is: " + Math.round(ADLscore) + "/100<br>"
 				+ "Your Section 4 score is: " + Math.round(Sportscore) + "/100<br>"
@@ -792,7 +792,7 @@
 
 				if (totalSportquestions < 5){
 					document.getElementById("Sport_result").innerHTML = "You still have " + (5 - totalSportquestions)+ " unanswered questions in the forth section (Sport/Rec).<br>";
-					failpopupcontent += "You still have " + (5 - totalSportquestions)+ "unanswered questions in the forth section (Sport/Rec).<br>";
+					failpopupcontent += "You still have " + (5 - totalSportquestions)+ " unanswered questions in the forth section (Sport/Rec).<br>";
 				} else {
 					document.getElementById("Sport_result").innerHTML = "";
 				}
@@ -904,9 +904,10 @@
 	<form>
 		<p>This survey asks for your view about your knee. 
             This information will help us keep track of how you feel about your knee and how well you are able to perform your usual activities.</p>
-		<p>Answer every question by choosing the appropriate options, only one option for each question. 
+		<br>
+            <p>Answer every question by choosing the appropriate options, only one option for each question. 
             If you are unsure about how to answer a question, please give the best answer you can.</p>
-		<br><br>
+		<br>
 		<fieldset>
 			<legend>Section 1: Pain</legend>
 			<p>1. How ofter do you experience knee pain?</p>
